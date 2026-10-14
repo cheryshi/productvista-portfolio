@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ProductVista：面向 WooCommerce 的 Gutenberg 动态模块套件作品集。">
+  <meta name="theme-color" content="#f4f0e8">
+  <title>ProductVista｜WooCommerce Gutenberg 模块套件</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="ProductVista 首页">ProductVista<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">打开导航</span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="主要导航">
+        <a href="#cases">精选模块</a><a href="#modules">模块概览</a><a href="#engineering">技术实现</a><a href="#status">项目状态</a><a href="#contact">合作方向</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">WordPress · WooCommerce · Gutenberg</p>
+          <h1>让商品内容不止是<br><em>一张产品网格。</em></h1>
+          <p class="hero-lead">ProductVista 是一套为 WooCommerce 开发的 Gutenberg 动态模块：把商品展示、场景热点、颜色组合与内容叙事，变成编辑器里可配置、前台按需加载的模块。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://shosmarket.com/new-widget/" target="_blank" rel="noopener noreferrer">查看真实演示 <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#cases">浏览精选模块 <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="项目摘要">
+          <div class="hero-mark" aria-hidden="true">PV</div>
+          <dl>
+            <div><dt>形态</dt><dd>11 个动态区块</dd></div>
+            <div><dt>插件版本</dt><dd>1.2.1</dd></div>
+            <div><dt>前端</dt><dd>PHP · CSS · JavaScript</dd></div>
+            <div><dt>公共依赖</dt><dd>Swiper 11.0.0（本地）</dd></div>
+          </dl>
+        </aside>
+      </div>
+      <div class="shell role-strip reveal" aria-label="开发职责">
+        <span>开发职责</span>
+        <p>模块架构、Gutenberg 编辑体验、动态渲染、WooCommerce 数据接入、交互与响应式样式、公共资源维护。</p>
+      </div>
+    </section>
+
+    <section class="section cases" id="cases">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">Selected modules / 03</p><h2>三个把商品带入场景的模块</h2></div>
+          <p>案例选择同时参考本地 Gutenberg 源码与公开演示页。截图来自线上同系列演示；演示页当前使用 Elementor 版本，不能视为本仓库 Gutenberg 构建的运行验证。</p>
+        </div>
+
+        <article class="case-card reveal">
+          <div class="case-visual">
+            <img src="assets/screenshots/product-showcase.png" width="1338" height="698" loading="lazy" alt="公开演示页中的 Product Showcase：左侧商品卡片，右侧推广文案">
+            <span class="image-note">公开演示截图 · 2026-10-14</span>
+          </div>
+          <div class="case-copy">
+            <p class="case-index">01 / Commerce storytelling</p><h3>Advanced Product Showcase</h3>
+            <p>用同步的商品主视觉与推广文案构成双栏展示，让单品选择与品牌叙事发生在同一屏。</p>
+            <dl class="case-details">
+              <div><dt>配置方式</dt><dd>在区块属性中维护 slides、商品、背景、富文本、按钮和响应式数量；编辑器通过 ProductPicker 选择商品。</dd></div>
+              <div><dt>技术实现</dt><dd>PHP 动态渲染并过滤非公开或不可见商品；前台与编辑器脚本分离，共用本地 Swiper 11.0.0 和按钮组件。</dd></div>
+            </dl>
+            <a class="text-link" href="https://shosmarket.com/new-widget/" target="_blank" rel="noopener noreferrer">在演示页查看 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="case-card case-card-reverse reveal">
+          <div class="case-visual">
+            <img src="assets/screenshots/hotspot-product.png" width="1338" height="540" loading="lazy" alt="公开演示页中的 Hotspot Product：场景图热点与商品卡片">
+            <span class="image-note">公开演示截图 · 2026-10-14</span>
+          </div>
+          <div class="case-copy">
+            <p class="case-index">02 / Shoppable imagery</p><h3>Hotspot Product</h3>
+            <p>在场景图上放置可交互热点，把视觉中的物品直接关联到 WooCommerce 商品卡与加购路径。</p>
+            <dl class="case-details">
+              <div><dt>配置方式</dt><dd>设置背景图、热点坐标、商品 ID、选中项、图片适配以及商品与加购按钮样式。</dd></div>
+              <div><dt>技术实现</dt><dd>服务端输出首个有效商品；公开 Ajax 使用 nonce 与商品可见性检查更新卡片，并接入 WooCommerce add-to-cart。</dd></div>
+            </dl>
+            <a class="text-link" href="https://shosmarket.com/new-widget/" target="_blank" rel="noopener noreferrer">在演示页查看 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="case-card reveal">
+          <div class="case-visual">
+            <img src="assets/screenshots/color-switch.png" width="1338" height="833" loading="lazy" alt="公开演示页中的 Color Switch：颜色场景图与关联商品列表">
+            <span class="image-note">公开演示截图 · 2026-10-14</span>
+          </div>
+          <div class="case-copy">
+            <p class="case-index">03 / Curated variants</p><h3>Color Switch</h3>
+            <p>用颜色或分组切换场景图与成组商品，支持快速查看和加购，适合搭配灵感与系列陈列。</p>
+            <dl class="case-details">
+              <div><dt>配置方式</dt><dd>每组维护颜色、图片和商品 ID 集合；可设置商品上限、移动端可见数量、按钮样式与动效。</dd></div>
+              <div><dt>技术实现</dt><dd>Ajax 批量查询限制在 24 项并过滤非公开/不可见商品；nonce 可刷新，前台处理快速切换、快览与加购反馈。</dd></div>
+            </dl>
+            <a class="text-link" href="https://shosmarket.com/new-widget/" target="_blank" rel="noopener noreferrer">在演示页查看 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section modules" id="modules">
+      <div class="shell">
+        <div class="section-heading compact reveal"><div><p class="eyebrow">Module system</p><h2>不止三个案例</h2></div><p>11 个模块按使用场景组合；WooCommerce 只在需要商品或分类数据的模块中成为依赖。</p></div>
+        <div class="module-groups">
+          <article class="module-group reveal"><span class="group-no">A</span><h3>商品与集合</h3><ul><li>Advanced Product Showcase</li><li>Hotspot Product</li><li>Color Switch</li><li>Featured Collection Tabs</li><li>Product Category Carousel</li></ul></article>
+          <article class="module-group reveal"><span class="group-no">B</span><h3>品牌与导航</h3><ul><li>Category / Brand Slider</li><li>Hover Category Pro</li><li>Hero Slider</li></ul></article>
+          <article class="module-group reveal"><span class="group-no">C</span><h3>内容与视觉</h3><ul><li>Before / After Slider</li><li>Image Reveal</li><li>Accordion</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section engineering" id="engineering">
+      <div class="shell engineering-grid">
+        <div class="engineering-intro reveal"><p class="eyebrow">Under the hood</p><h2>为 WordPress 的真实运行方式而设计</h2><p>项目没有构建步骤，也不依赖 ACF。PHP 负责注册与动态输出，原生 JavaScript 管理交互，资源通过 WordPress handle 组合。</p><div class="code-chip" aria-label="区块注册示意"><span>register_block_type()</span><span>render_callback</span><span>api_version: 2</span></div></div>
+        <ol class="tech-list">
+          <li class="reveal"><span>01</span><div><h3>区块注册</h3><p>每个模块在 init 中注册编辑器脚本、前台样式/脚本和 Gutenberg API v2 区块；模块管理器扫描目录并只加载后台已启用项。</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>配置与数据</h3><p>配置主要保存在 block attributes。商品选择器通过受 edit_posts 权限保护的 REST 搜索 WooCommerce 商品；代码中未发现 ACF API。</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>动态渲染</h3><p>11 个区块均由 PHP render_callback 输出。商品模块在渲染或 Ajax 响应前检查 publish 状态与可见性，并按上下文转义。</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>资源与维护</h3><p>公共按钮、链接工具与 Swiper 先注册后按模块声明依赖；Swiper 11.0.0 固定在插件本地。部分资源以 filemtime 做缓存版本。</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section status" id="status">
+      <div class="shell">
+        <div class="section-heading compact reveal"><div><p class="eyebrow">Evidence, not claims</p><h2>项目状态与验证边界</h2></div><p>把“源码确认”“静态检查通过”和“真实运行验证”分开记录，避免把推导当成实测。</p></div>
+        <div class="status-grid">
+          <article class="status-card confirmed reveal"><span>已确认实现</span><h3>源码可追溯</h3><ul><li>11 个 Gutenberg API v2 动态区块</li><li>WordPress 5.6+、PHP 7.1+ 为代码推导下限</li><li>6 个模块或公共选择器涉及 WooCommerce</li><li>无 ACF、无前端构建步骤</li></ul></article>
+          <article class="status-card passed reveal"><span>静态检查通过</span><h3>本地自动检查</h3><ul><li>项目记录：Node.js 测试 13/13 通过</li><li>项目记录：全部 JavaScript 通过 node --check</li><li>本地 Swiper 11.0.0 完整性检查通过</li><li>作品集 HTML/CSS/JS 已做本地链接与控制台检查</li></ul></article>
+          <article class="status-card pending reveal"><span>尚未运行验证</span><h3>明确限制</h3><ul><li>当前未建立 WordPress / WooCommerce 测试环境</li><li>PHP CLI 不可用，PHP lint 与 PHP 测试未执行</li><li>浏览器与真实设备兼容矩阵仍待执行</li><li>线上演示为同系列 Elementor 版本，并非当前 Gutenberg 构建证明</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell contact-card reveal">
+        <div><p class="eyebrow">Let’s build for commerce</p><h2>WordPress / WooCommerce<br>定制开发</h2></div>
+        <div><p>可合作方向包括 Gutenberg 动态区块、商品展示组件、WooCommerce 前端交互、编辑器体验与既有插件维护。</p><p class="contact-note">当前项目未提供可公开的邮箱或社交账号，因此本页不设置无效表单。可先查看真实演示；发布仓库后可通过仓库 Issue 联系。</p><a class="button button-primary" href="https://shosmarket.com/new-widget/" target="_blank" rel="noopener noreferrer">打开真实演示 <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell"><a class="brand" href="#top">ProductVista<span>.</span></a><p>WooCommerce Gutenberg modules · Portfolio</p><p>© <span data-year>2026</span></p></div></footer>
+</body>
+</html>
